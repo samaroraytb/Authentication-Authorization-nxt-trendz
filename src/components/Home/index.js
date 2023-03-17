@@ -17,7 +17,7 @@ const Home = () => {
           <h1 className="home-heading">Clothes That Get YOU Noticed</h1>
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-img.png"
-            alt="dresses to be noticed"
+            alt="clothes that get you noticed"
             className="home-mobile-img"
           />
           <p className="home-description">

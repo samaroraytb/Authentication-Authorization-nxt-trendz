@@ -57,6 +57,7 @@ class LoginForm extends Component {
           PASSWORD
         </label>
         <input
+          placeholder="password"
           type="password"
           id="password"
           className="password-input-filed"
@@ -75,6 +76,7 @@ class LoginForm extends Component {
           USERNAME
         </label>
         <input
+          placeholder="Username"
           type="text"
           id="username"
           className="username-input-filed"
@@ -105,7 +107,7 @@ class LoginForm extends Component {
           className="login-image"
           alt="website login"
         />
-        <form onSubmit={this.clickedSubmit} className="form-container">
+        <form onSubmit={{this.clickedSubmit}} className="form-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
             className="login-website-logo-desktop-image"
@@ -113,7 +115,11 @@ class LoginForm extends Component {
           />
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
+          <button
+            onClick={this.clickedSubmit}
+            type="submit"
+            className="login-button"
+          >
             Login
           </button>
           {showSubmitError && <p className="error-message">*{stateErrorMsg}</p>}

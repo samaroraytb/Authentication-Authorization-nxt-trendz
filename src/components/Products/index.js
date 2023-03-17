@@ -2,7 +2,7 @@ import Header from '../Header'
 
 import './index.css'
 
-const Products = () => (
+const ProductsRoute = () => (
   <>
     <Header />
     <div className="products-container">
@@ -15,4 +15,4 @@ const Products = () => (
   </>
 )
 
-export default Products
+export default ProductsRoute

@@ -5,8 +5,8 @@ import './index.css'
 const Header = props => {
   const {history} = props
   const loggingOutUser = () => {
-    Cookies.remove('jwt_token')
     history.replace('/login')
+    Cookies.remove('jwt_token')
   }
 
   return (
@@ -41,7 +41,11 @@ const Header = props => {
         >
           Logout
         </button>
-        <button type="button" className="logout-mobile-btn">
+        <button
+          onClick={loggingOutUser}
+          type="button"
+          className="logout-mobile-btn"
+        >
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
             alt="logout icon"

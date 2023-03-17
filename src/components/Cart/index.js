@@ -1,7 +1,7 @@
 import Header from '../Header'
 import './index.css'
 
-const Cart = () => (
+const CartRoute = () => (
   <>
     <Header />
     <div className="cart-container">
@@ -14,4 +14,4 @@ const Cart = () => (
   </>
 )
 
-export default Cart
+export default CartRoute
