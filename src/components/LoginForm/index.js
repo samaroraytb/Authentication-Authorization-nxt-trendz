@@ -107,7 +107,7 @@ class LoginForm extends Component {
           className="login-image"
           alt="website login"
         />
-        <form onSubmit={{this.clickedSubmit}} className="form-container">
+        <form onSubmit={this.clickedSubmit} className="form-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
             className="login-website-logo-desktop-image"
